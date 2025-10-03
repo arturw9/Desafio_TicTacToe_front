@@ -1,0 +1,138 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.players-status {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.player {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.player.active {
+  background-color: #90caf9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.btn-voltar, .btn-ranking {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-voltar {
+  background-color: #eeeeee;
+}
+
+.btn-ranking {
+  background-color: #90caf9;
+  color: #fff;
+}
+
+.btn-voltar:hover {
+  background-color: #d6d6d6;
+  transform: translateY(-2px);
+}
+
+.btn-ranking:hover {
+  background-color: #64b5f6;
+  transform: translateY(-2px);
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  font-size: 28px;
+  cursor: pointer;
+  border: 2px solid #555;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.square-x {
+  background-color: #2196f3; /* azul */
+  color: white;
+  animation: pop 0.2s ease;
+}
+
+.square-o {
+  background-color: #ffeb3b; /* amarelo */
+  color: #333;
+  animation: pop 0.2s ease;
+}
+
+/* Animação de pop ao marcar */
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .board {
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 10px;
+  }
+  .square {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+  .players-status {
+    gap: 20px;
+    font-size: 16px;
+  }
+  .btn-voltar, .btn-ranking {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,81 @@
+.player-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.player-input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.player-input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+  padding: 12px 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+  width: 300px;
+}
+
+.btn-primary:hover {
+  background-color: #ff4757;
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  width: 300px;
+}
+
+.buttons-secondary {
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.buttons-secondary .btn {
+  flex: none;
+}
+
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+}

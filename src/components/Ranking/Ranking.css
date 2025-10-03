@@ -1,0 +1,95 @@
+.ranking-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.ranking-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.ranking-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.ranking-item:hover {
+  transform: translateY(-3px);
+}
+
+.rank-position {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4a90e2;
+  width: 40px;
+}
+
+.player-name {
+  flex: 1;
+  font-weight: 500;
+  color: #555;
+}
+
+.player-victories {
+  font-weight: bold;
+  color: #333;
+}
+
+.rank-1 {
+  background-color: #ffe082; /* ouro */
+}
+
+.rank-2 {
+  background-color: #cfd8dc; /* prata */
+}
+
+.rank-3 {
+  background-color: #d7ccc8; /* bronze */
+}
+
+.no-winner {
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.ranking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button-back, .button-chart {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-back:hover, .button-chart:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}

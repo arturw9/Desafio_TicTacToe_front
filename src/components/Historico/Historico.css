@@ -1,0 +1,90 @@
+.history-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.button-back {
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-back:hover {
+  background-color: #357ABD;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.history-item-card {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.history-item-card:hover {
+  transform: translateY(-3px);
+}
+
+.history-item-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.history-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-pagination {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4a90e2;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-pagination:hover:not(.disabled) {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}
+
+.btn-pagination.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: bold;
+  color: #333;
+}
