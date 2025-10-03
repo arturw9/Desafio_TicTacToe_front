@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+🎮 Desafio TicTacToe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📌 Projeto completo Front-end + Back-end, desenvolvido com React.js, .NET Core e PostgreSQL (via Entity Framework Core).
+As boas práticas de S.O.L.I.D e Clean Code foram aplicadas para garantir organização, escalabilidade e manutenibilidade.
 
-## Available Scripts
+👉 Imagens das telas em funcionamento estão disponíveis na pasta /telas.
 
-In the project directory, you can run:
+🚀 Tecnologias Utilizadas
 
-### `npm start`
+Front-end: React.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Back-end: ASP.NET Core (.NET)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Banco de Dados: PostgreSQL + Entity Framework Core
 
-### `npm test`
+Testes Unitários: xUnit + EF InMemory
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Documentação da API: Swagger
 
-### `npm run build`
+📂 Estrutura do Projeto
+📌 Front-end (React.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+/api → Arquivo responsável pelas chamadas de endpoints da API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+.env → Define a URL base da API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+/routes → Arquivo com as rotas do projeto (navegação entre telas e passagem de dados).
 
-### `npm run eject`
+/components → Cada tela/component possui sua pasta, contendo o arquivo React (.jsx) e seu respectivo CSS.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📌 Principais Telas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+AcessoInicial → Tela inicial para entrada dos nomes dos jogadores.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Grafico → Exibe gráfico de vitórias por jogador.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Historico → Lista com o histórico de partidas.
 
-## Learn More
+MelhoresEstrategias → Mostra as estratégias mais utilizadas pelos vencedores.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Partida → Tela principal onde ocorre o jogo da velha.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Quadrado → Representa cada célula do tabuleiro.
 
-### Code Splitting
+Ranking → Exibe os melhores jogadores (maior número de vitórias).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📖 Funcionalidades
 
-### Analyzing the Bundle Size
+✅ Dois jogadores jogam alternadamente
+✅ Registro de histórico de partidas (nomes, vencedor/empate, data e hora)
+✅ Persistência de vencedores via API
+✅ Gráfico de vitórias por jogador (Torres)
+✅ Entrada de nomes personalizados para os jogadores
+✅ Destaque visual para o jogador atual durante a partida
+✅ Tela de ranking e listagem dos últimos vencedores
+✅ Registro de logs das jogadas realizadas
+✅ Exibição das estratégias mais vencedoras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+⚙️ Como Rodar o Projeto
 
-### Making a Progressive Web App
+Configure corretamente o arquivo .env com a URL da API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Instale as dependências:
 
-### Advanced Configuration
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Inicie o projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
